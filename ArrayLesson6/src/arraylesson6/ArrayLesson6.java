@@ -25,14 +25,14 @@ public class ArrayLesson6/*CHANGE THIS TO THE NAME OF THE FILE*/
 	
 	// ***** declaration of variables *****
         
-            //int n = 0;
+            
             int in = 0;
             
             int[] array = new int[LENGTH];
             
 	// ***** create objects *****
 	
-
+            
 	// ***** create input stream *****
 	
 		//ConsoleReader console = new ConsoleReader(System.in);
@@ -48,15 +48,23 @@ public class ArrayLesson6/*CHANGE THIS TO THE NAME OF THE FILE*/
 	// ***** get input *****
 
 	// ***** processing *****
+        
+        System.out.println("Printing first 20 numbers of the fibonacci sequence");
+        
         array[0] = 0;
         array[1] = 1;
         
+        System.out.println(array[0]);
+        System.out.println(array[1]);
+        
+        //printing numbers 1-20 of fibonacci sequence
         for (int i = 2; i<LENGTH; i++) {
             
             array[i] = array[i-1] + array[i-2];
             System.out.println(array[i]);
         }
         
+        //printing first 5 numbers of fibonacci sequence
         System.out.println("Printing first five numbers of the fibonacci sequence");
         for (int i = 0; i<5; i++) {
             System.out.print(array[i]+"  ");
@@ -68,9 +76,10 @@ public class ArrayLesson6/*CHANGE THIS TO THE NAME OF THE FILE*/
         
         System.out.println();
         
+        //printing last 5 numbers of fibonacci sequence (#15-20)
         System.out.println("Printing numbers 15-20 of the fibonacci sequence");
         for (int i = 0; i<5; i++) {
-            System.out.print(array[(LENGTH-1)-i] +"  ");
+            System.out.print(array[(LENGTH-5)+i] +"  ");
             
             if (i == 2){
                 System.out.println();
